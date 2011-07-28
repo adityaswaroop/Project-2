@@ -1,0 +1,126 @@
+= form_for(@company) do |f|
+  - if @company.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@company.errors.count, "error")
+        prohibited this company from being saved:
+      %ul
+        - @company.errors.full_messages.each do |msg|
+          %li= msg
+  %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0", :style => "width:900px;"}
+    %tr
+      %td{:width => "50%"}
+        %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+          %tr
+            %td.td_width.main_title{:colspan => "2"}
+              %b Company Details:
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+              %b Group Name:
+            %td= f.text_field :group_name
+          %tr
+            %td.td_width
+              %b Company Name:
+            %td= f.text_field :company_name
+          %tr
+            %td.td_width
+              %b Establishment Date:
+            %td= f.date_select :establishment_date
+          %tr
+            %td.td_width
+              %b Company Logo:
+            %td= f.text_field :company_logo
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width.main_title{:colspan => "2"}
+              %b Address Details:
+          %tr
+            %td.td_height_form{:colspan => "2"}
+          %tr
+            %td.td_width
+              %b Address:
+            %td= f.text_field :address
+          %tr
+            %td.td_width
+              %b State:
+            %td= f.text_field :state
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width.main_title{:colspan => "2"}
+              %b Contact Details:
+          %tr
+            %td.td_height_form{:colspan => "2"}
+          %tr
+            %td.td_width
+              %b Contact No:
+            %td= f.number_field :contact_one
+          %tr
+            %td.td_width
+              %b Email:
+            %td= f.text_field :email
+          %tr
+            %td.td_width
+              %b Fax:
+            %td= f.number_field :fax
+      %td{:width => "50%"}
+        %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+          %tr
+            %td.td_width
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+          %tr
+            %td.td_width
+              %b Responsible Person:
+            %td= f.text_field :responsible_person
+          %tr
+            %td.td_width
+              %b Company Type:
+            %td= f.text_field :company_type
+          %tr
+            %td.td_width
+            %td
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+              %b City:
+            %td= f.text_field :city
+          %tr
+            %td.td_width
+              %b Country:
+            %td= f.text_field :country
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+          %tr
+            %td.td_height_form
+          %tr
+            %td.td_width
+              %b Alternate No:
+            %td= f.number_field :contact_two
+          %tr
+            %td.td_width
+              %b Alternate Email:
+            %td= f.text_field :email2
+          %tr
+            %td.td_width
+              %b Website:
+            %td= f.text_field :website
+    %tr
+      %td.td_height_form
+    %tr
+      %td.td_height_form
+    %tr
+      %td.td_height_form
+        .actions= f.submit

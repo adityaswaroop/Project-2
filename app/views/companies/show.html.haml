@@ -1,0 +1,96 @@
+%p#notice= notice
+%h1 Company Details
+%table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
+  %tr
+    %td{:width => "50%"}
+      %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+        %tr
+          %td.td_width.main_title{:colspan => "2"}
+            %b Company Details:
+        %tr
+          %td.td_width
+            %b Group Name:
+          %td= @company.group_name
+        %tr
+          %td.td_width
+            %b Company Name:
+          %td= @company.company_name
+        %tr
+          %td.td_width
+            %b Establishment Date:
+          %td= l @company.establishment_date, :format => :default
+        %tr
+          %td.td_width
+            %b Company Logo:
+          %td= @company.company_logo
+        %tr
+          %td.td_width.main_title{:colspan => "2"}
+            %b Address Details:
+        %tr
+          %td.td_width
+            %b Address:
+          %td= @company.address
+        %tr
+          %td.td_width
+            %b State:
+          %td= @company.state
+        %tr
+          %td.td_width.main_title{:colspan => "2"}
+            %b Contact Details:
+        %tr
+          %td.td_width
+            %b Contact No:
+          %td= @company.contact_one
+        %tr
+          %td.td_width
+            %b Email:
+          %td= @company.email
+        %tr
+          %td.td_width
+            %b Fax:
+          %td= @company.fax
+    %td{:width => "50%"}
+      %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+        %tr
+          %td.td_width
+        %tr
+          %td.td_width
+        %tr
+          %td.td_width
+            %b Responsible Person:
+          %td= @company.responsible_person
+        %tr
+          %td.td_width
+            %b Company Type:
+          %td= @company.company_type
+        %tr
+          %td.td_width
+          %td &nbsp;
+        %tr
+          %td.td_width
+          %td &nbsp;
+        %tr
+          %td.td_width
+            %b City:
+          %td= @company.city
+        %tr
+          %td.td_width
+            %b Country:
+          %td= @company.country
+        %tr
+          %td.td_width
+        %tr
+          %td.td_width
+            %b Alternate No:
+          %td= @company.contact_two
+        %tr
+          %td.td_width
+            %b Alternate Email:
+          %td= @company.email2
+        %tr
+          %td.td_width
+            %b Website:
+          %td= @company.website
+= link_to 'Edit', edit_company_path(@company)
+|
+\#{link_to 'Back', companies_path}
