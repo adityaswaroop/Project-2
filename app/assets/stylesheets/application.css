@@ -5,3 +5,10 @@
  *= require_self
  *= require_tree . 
 */
+
+.test {
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+    list-style-image:
+}

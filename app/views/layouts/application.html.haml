@@ -6,14 +6,5 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %div#page
-  %div#header
-    %h1 Welcome Aditya! You are logged in as Administrator
-  %div
-    %ul#menu
-      %li Initial Settings
-      %ul
-        %li
-          %a{ :href => 'companies' } Company Details
-          = yield
+= yield
 

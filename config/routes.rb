@@ -1,6 +1,6 @@
 Project2::Application.routes.draw do
-  #get "landing/index"
-  get "layout/application"
+  get "landing/index"
+  #get "layout/application"
 
   resources :companies
 
