@@ -35,7 +35,7 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/landing/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="8" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.72591364">
+            <state line="78" column="25" selection-start="3556" selection-end="3556" vertical-scroll-proportion="0.8255814">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="scaffolds.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="22" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
+            <state line="196" column="4" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,9 +93,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/views/landing/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/landing/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
       </list>
     </option>
   </component>
@@ -590,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="22" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="3" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
@@ -604,9 +597,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="4" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/landing/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="8" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.72591364">
+        <state line="78" column="25" selection-start="3556" selection-end="3556" vertical-scroll-proportion="0.8255814">
           <folding />
         </state>
       </provider>
