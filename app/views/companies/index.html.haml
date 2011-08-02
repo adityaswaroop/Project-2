@@ -1,34 +1,5 @@
 #page
-  #header
-    %h1
-      Welcome Aditya! You are logged in as Administrator
-      %br>/
-      01 Aug 2011, 12:00 PM
-  #menu
-    %ul
-      %li
-        %a{:href => root_url} HOME
-      %li
-        %a.selected{:href => "companies"} COMPANY
-      %li
-        %a{:href => "#"} EMPLOYEE
-  .below_border &nbsp;
-  #left-content
-    .left_box
-      .left_box_header
-        %h1 Company's Quick Links
-      %p
-        %a{:href => "#"} Add Group
-        %br/
-        %a{:href => new_company_path} Add New Company
-        %br/
-        %a{:href => "#"} Add PF Account
-        %br/
-        %a{:href => "#"} Add ESI Account
-        %br/
-        %a{:href => "#"} Add New Branch
-        %br/
-        %a{:href => "#"} Privacy Policy
+  = render "common"
   #right-content
     %h1 Listing Companies
     %table{:align => "center", :cellpadding => "0", :cellspacing => "0", :width => "900"}
