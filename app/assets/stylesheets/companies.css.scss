@@ -44,7 +44,7 @@ td {
 }
 
 .disp_data {
-    width:800px;
+    width:99%;
     border:1px solid #000000;
     background-color: #f1f1f1;
     border-radius:5px;
@@ -58,6 +58,11 @@ td {
     height:5px;
 }
 
+.spacing {
+    height:15px;
+}
+
 .main_title {
-    background-color: #B8EFEC
+    background-color: #943C09;
+    color: #ffffff;
 }

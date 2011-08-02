@@ -3,3 +3,7 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
+
+ruby-enterprise-1.8.6-20090610
+
+centos_passenger_install.sh
