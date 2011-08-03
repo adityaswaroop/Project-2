@@ -66,3 +66,87 @@ td {
     background-color: #943C09;
     color: #ffffff;
 }
+
+div.domtab  {
+    padding:0 3em;
+    width:80%;
+    font-size:90%;
+}
+ol.domtabs{
+    float:left;
+    width:100%;
+    margin:2em 0 0 0;
+    list-style: none;
+}
+ol.domtabs li{
+    float:left;
+    padding:0 .5em 0 0;
+}
+ol.domtabs a:link,
+ol.domtabs a:visited,
+ol.domtabs a:active,
+ol.domtabs a:hover{
+    width:8em;
+    padding:.2em 1em;
+    display:block;
+    background:#666;
+    color:#ccc;
+    height:3em;
+    font-weight:bold;
+    text-decoration:none;
+}
+html>body ol.domtabs a:link,
+html>body ol.domtabs a:visited,
+html>body ol.domtabs a:active,
+html>body ol.domtabs a:hover{
+    height:auto;
+    min-height:3em;
+}
+ol.domtabs a:hover{
+    background:#696;
+}
+div.domtab div{
+    clear:both;
+    width:auto;
+    background:#696;
+    color:#fff;
+    padding:1em 3em;
+}
+ol.domtabs li.active a:link,
+ol.domtabs li.active a:visited,
+ol.domtabs li.active a:active,
+ol.domtabs li.active a:hover{
+    background:#696;
+    color:#fff;
+}
+#domtabprintview{
+    float:right;
+    padding-right:1em;
+    text-align:right;
+}
+#domtabprintview a:link,
+#domtabprintview a:visited,
+#domtabprintview a:active,
+#domtabprintview a:hover{
+    color:#fff;
+}
+div.domtab div a:link,
+div.domtab div a:visited,
+div.domtab div a:active
+{
+    color:#fff;
+    display:block;
+    padding:1em .5em;
+    font-weight:bold;
+    font-size:1.3em;
+}
+div.domtab div h2 a,
+div.domtab div h2 a:hover,
+div.domtab div h2 a:active
+{
+    color:#cfc;
+    display:inline;
+    padding:0;
+    font-weight:normal;
+    font-size:1em;
+}
