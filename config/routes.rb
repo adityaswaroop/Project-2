@@ -3,6 +3,7 @@ Project2::Application.routes.draw do
   #get "layout/application"
 
   resources :companies
+  resources :employees
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
