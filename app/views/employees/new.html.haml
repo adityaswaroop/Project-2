@@ -1,30 +1,5 @@
 #page
   = render "common"
-!!!
-%html{:xmlns => "http://www.w3.org/1999/xhtml"}
-  %head
-    %meta{:content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type"}/
-  %body
-    %h1
-      New Employee Information
-    %form#form1{:action => "", :method => "post", :name => "form1"}
-      %div
-        %span
-          %label
-            Ref No
-            %input{:name => "textfield", :type => "text"}/
-          %label
-            Emp No
-            %input{:name => "textfield2", :type => "text"}/
-          %label
-            Order By
-            %select{:name => "orderBy", :size => "1"}
-              %option Name
-              %option Ref No
-              %option Emp No
-        %span
-          %textarea{:cols => "50", :name => "EmpList", :readonly => "readonly", :rows => "1"}
-            :preserve
-        %label
-          Emp Name
-          %input{:name => "txtName", :type => "text"}
+  #right-content
+    %h1 New Employee
+    = render "form"
