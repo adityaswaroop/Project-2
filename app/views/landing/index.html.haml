@@ -1,4 +1,20 @@
 #page
+  #header
+    %h1
+      Welcome Aditya! You are logged in as Administrator
+      %br>/
+      #{Time.now.strftime("%d %b %Y, %I:%M %p")}
+  #menu
+    %ul
+      %li
+        %a.selected{:href => root_url} HOME
+      %li
+        %a{:href => companies_path} COMPANY
+      %li
+        %a{:href => employees_path} EMPLOYEE
+      %li
+        %a{:href => timemanagements_path} TA
+  .below_border &nbsp;
   #left-content
     .left_box
       .left_box_header

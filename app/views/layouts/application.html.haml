@@ -5,22 +5,6 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
-    #header
-      %h1
-        Welcome Aditya! You are logged in as Administrator
-        %br>/
-        #{Time.now.strftime("%d %b %Y, %I:%M %p")}
-    #menu
-      %ul
-        %li
-          %a{:href => root_url} HOME
-        %li
-          %a.selected{:href => companies_path} COMPANY
-        %li
-          %a{:href => employees_path} EMPLOYEE
-        %li
-          %a{:href => "#"} TA
-    .below_border &nbsp;
   %body
-= yield
+    = yield
 
