@@ -1,0 +1,34 @@
+#header
+  %h1
+    Welcome Aditya! You are logged in as Administrator
+    %br>/
+    #{Time.now.strftime("%d %b %Y, %I:%M %p")}
+#menu
+  %ul
+    %li
+      %a{:href => root_url} HOME
+    %li
+      %a{:href => companies_path} COMPANY
+    %li
+      %a.selected{:href => employees_path} EMPLOYEE
+    %li
+      %a{:href => timemanagements_path} TA
+.below_border &nbsp;
+#left-content
+  .left_box
+    .left_box_header
+      %h1 Company's Quick Links
+    %p
+      %a{:href => employees_path} Employee
+      %br/
+      %a{:href => "http://localhost:3000/employees/new"} Add New Employee
+      %br/
+      %a{:href => "#"} Report
+      %br/
+      %a{:href => "#"} Salary
+      %br/
+      %a{:href => "#"} HR Details
+      %br/
+      %a{:href => "#"} Documents
+      %br/
+      %a{:href => "#"} Ext. Details
