@@ -14,4 +14,9 @@ ruby-enterprise-1.8.6-20090610.tar.gz
 ruby-enterprise-1.8.6-20090610.tar.gz.1
 
 config/deploy.rb
+<<<<<<< HEAD
 app/views/landing/_test.html.haml
+=======
+
+app/views/companies/test.html.haml
+>>>>>>> 45e571493c52e68ba119a3732f4152fc10713b9d

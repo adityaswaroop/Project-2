@@ -123,9 +123,6 @@ div {
     background-color: #943C09;
     height:31px;
 }
-
-
-
 #left-content {
     float:left;
     margin: 10px;
@@ -172,10 +169,9 @@ div {
 
     ul {
 
-        list-style-image: url("/assets/images.jpeg");
-
         li {
            font-size:14px;
+           list-style-image: url("/assets/images.jpeg");
 
         }
 
