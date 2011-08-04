@@ -1,3 +1,11 @@
+%script{:src => "tabber.js", :type => "text/javascript"}
+%link{:href => "example.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+:javascript
+  /* Optional: Temporarily hide the "tabber" class so it does not "flash"
+     on the page as plain HTML. After tabber runs, the class is changed
+     to "tabberlive" and it will appear. */
+
+  document.write('<style type="text/css">.tabber{display:none;}<\/style>');
 = form_for(@company) do |f|
   - if @company.errors.any?
     #error_explanation
@@ -7,28 +15,247 @@
       %ul
         - @company.errors.full_messages.each do |msg|
           %li= msg
-  %script{:src => "/assets/companies.js", :type => "text/javascript"}
-    :javascript
-      document.write('<style type="text/css">');
-      document.write('div.domtab div{display:none;}<');
-      document.write('/s'+'tyle>');
-  %p#domtabprintview
-  .domtab
-    %ol.domtabs
-      %li
-        %a{:href => "#what"} What is DOMtab?
-      %li
-        %a{:href => "#how"} How to use DOMtab
-      %li
-        %a{:href => "#pr"} Previous and next links
-      %li
-        %a{:href => "#style"} How to style DOMtab
-      %li
-        %a{:href => "#dl"} Download
-    %div
-      %h2
-        %a#what{:name => "what"} What is DOMtab?
-    %div
-      %h2
-        %a#how{:name => "how"} How to use DOMtab
+  #form
+    .tabber
+      .tabbertab
+        %h2 Company Detail
+        %div
+          %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
+            %tr
+              %td{:width => "50%"}
+                %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      Company Details:
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Group Name:
+                    %td= f.text_field :group_name
+                  %tr
+                    %td.td_width
+                      Company Name:
+                    %td= f.text_field :company_name
+                  %tr
+                    %td.td_width
+                      Establish Date:
+                    %td= f.date_select :establishment_date
+                  %tr
+                    %td.td_width
+                      Company Logo:
+                    %td= f.text_field :company_logo
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      Address Details:
+                  %tr
+                    %td.td_height_form{:colspan => "2"}
+                  %tr
+                    %td.td_width
+                      Address:
+                    %td= f.text_field :address
+                  %tr
+                    %td.td_width
+                      State:
+                    %td= f.text_field :state
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      Contact Details:
+                  %tr
+                    %td.td_height_form{:colspan => "2"}
+                  %tr
+                    %td.td_width
+                      Contact No:
+                    %td= f.number_field :contact_one
+                  %tr
+                    %td.td_width
+                      Email:
+                    %td= f.text_field :email
+                  %tr
+                    %td.td_width
+                      Fax:
+                    %td= f.number_field :fax
+                  %tr
+                    %td.spacing
+              %td{:width => "50%"}
+                %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_width
+                      Resp. Person:
+                    %td= f.text_field :responsible_person
+                  %tr
+                    %td.td_width
+                      Company Type:
+                    %td= f.text_field :company_type
+                  %tr
+                    %td.td_width
+                    %td
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      City:
+                    %td= f.text_field :city
+                  %tr
+                    %td.td_width
+                      Country:
+                    %td= f.text_field :country
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Alternate No:
+                    %td= f.number_field :contact_two
+                  %tr
+                    %td.td_width
+                      Alternate Email:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      Website:
+                    %td= f.text_field :website
+                  %tr
+                    %td.spacing
+      .tabbertab
+        %h2 PF/ESI Detail
+        %div
+          %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
+            %tr
+              %td{:width => "50%"}
+                %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      PF Details:
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Company PF No.:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      DBF File - Code:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      Extension:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      ESI Details:
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Company ESI No.:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      ESI Local Office:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      &nbsp;
+                  %tr
+                    %td.spacing
+              %td{:width => "50%"}
+                %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      PF Vol.:
+                    %td= f.check_box :email2
+                  %tr
+                    %td.td_width
+                      Multiple Group:
+                    %td= f.check_box :email2
+                  %tr
+                    %td.td_width
+                      &nbsp;
+                  %tr
+                    %td.spacing
+                  %tr
+                    %td.td_width
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Individually Calculate ESI:
+                    %td= f.check_box :email2
+                  %tr
+                    %td.td_width
+                      Limit ESI Gross:
+                    %td= f.check_box :email2
+                  %tr
+                    %td.td_width
+                      Multiple Group:
+                    %td= f.check_box :email2
+                  %tr
+                    %td.spacing
+      .tabbertab
+        %h2 Branch Detail
+        %div
+          %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
+            %tr
+              %td{:width => "50%"}
+                %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+                  %tr
+                    %td.td_width.main_title{:colspan => "2"}
+                      Branch Details:
+                  %tr
+                    %td.td_height_form
+                  %tr
+                    %td.td_width
+                      Branch:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      Resp. Person:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      Address:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      PF Group:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      PT Group:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.td_width
+                      ESI Group:
+                    %td= f.text_field :email2
+                  %tr
+                    %td.spacing
+
+              %td{:width => "50%"}
+
+      #form_button
+        .actions= f.submit
 
