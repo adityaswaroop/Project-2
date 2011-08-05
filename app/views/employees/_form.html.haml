@@ -14,16 +14,19 @@
       %div
         %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
           %tr
-            %td{:width => "155"} Ref No
-            %td{:width => "256"}
+            %td.main_title{:colspan => "2"}
+              Basic Details
+          %tr
+            %td{:width => "13%"} Ref No
+            %td{:width => "30%"}
               %input{:name => "txtRefNo", :type => "text"}/
-            %td{:width => "100"} Emp Id
-            %td{:width => "361"}
+            %td{:width => "13%"} Emp Id
+            %td{:width => "30%"}
               %input{:name => "txtEmpNo", :type => "text"}/
           %tr
             %td Employee Name
             %td
-              %input{:name => "txtEmpName", :size => "30", :type => "text"}/
+              %input{:name => "txtEmpName", :type => "text"}/
             %td Short Name
             %td
               %input{:name => "txtshortName", :type => "text"}/
@@ -48,39 +51,42 @@
           %tr
             %td Date Of Joining
             %td
-              %input{:name => "txtDOJ", :size => "30", :type => "text"}/
+              %input{:name => "txtDOJ",  :type => "text"}/
             %td Date Of Leaving
             %td
-              %input{:name => "txtDOL", :size => "30", :type => "text"}
+              %input{:name => "txtDOL", :type => "text"}
     .tabbertab
       %h2 Classification
       %div
         %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
           %tr
+            %td.main_title{:colspan => "2"}
+              Classification Details
+          %tr
             %td Designation
             %td
-              %input{:name => "txtDesignation", :type => "text", :size => "30"}/
-            %td{:colspan => "2",:align => "left"}
+              %input{:name => "txtDesignation", :type => "text"}/
+            %td{:colspan => "2"}
               %input{:name => "", :type => "button", :value => "..."}/
           %tr
             %td Reports to
             %td
               %input{:name => "txtReport", :type => "text"}/
-            %td Commison
+            %td Commission
             %td
-              %input{:name => "txtCommision", :type => "text"}/
+              %input{:name => "txtCommission", :type => "text"}/
           %tr
             %td Department
             %td
               %input{:name => "txtDepartment", :type => "text"}/
             %td Salary
             %td
-              %input{:name => "txtSalray", :type => "text"}/
+              %input{:name => "txtSalary", :type => "text"}/
           %tr
             %td Branch
             %td
               %input{:name => "txtBranch", :type => "text"}/
-            %td Attendence
+            %td Attendance
             %td
               %input{:name => "txtAttend", :type => "text"}/
           %tr
@@ -93,10 +99,46 @@
                 %option City Bank
                 %option ICICI
                 %option HSBC
+          %tr
+            %td Salary Structure
+            %td{}
+              %input{:name => "txtSalary", :type => "text"}/
     .tabbertab
       %h2 Address Details
       %div
         %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+          %tr
+            %td.main_title{:colspan => "2"}
+              Present Address Details
+          %tr
+            %td Res. No.
+            %td
+              %input{:name => "txtResNo", :type => "text"}/
+            %td Res. Name
+            %td
+              %input{:name => "txtResName", :type => "text"}/
+          %tr
+            %td Road/Street
+            %td
+              %input{:name => "txtRoad", :type => "text"}/
+            %td Locality/Area
+            %td
+              %input{:name => "txtLocality", :type => "text"}/
+          %tr
+            %td City/Dist.
+            %td
+              %input{:name => "txtCity", :type => "text"}/
+            %td State
+            %td
+              %input{:name => "txtState", :type => "text"}/
+          %tr
+            %td{:colspan => "2"}
+            %td Pin Code
+            %td
+              %input{:maxlength => "6", :name => "", :type => "text"}/
+          %tr
+            %td.main_title{:colspan => "2"}
+              Permanent Address Details
           %tr
             %td Res. No.
             %td
@@ -124,9 +166,34 @@
             %td
               %input{:maxlength => "6", :name => "", :type => "text"}/
     .tabbertab
-      %h2 TDS Details
+      %h2 Contact Details
       %div
         %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+          %tr
+            %td.main_title{:colspan => "2"}
+              Contact Information
+          %tr
+            %td Email Id
+            %td{:colspan => "3"}
+              %input{:name => "txtEmail_id", :type => "text"}/
+          %tr
+            %td STD Code
+            %td
+              %input{:name => "txtStd", :type => "text"}/
+            %td Phone No.
+            %td
+              %input{:name => "txtPhoneNo", :type => "text"}/
+          %tr
+            %td Mobile Number
+            %td{:colspan => "3"}
+              %input{:name => "txtMobileNo", :type => "text"}/
+    .tabbertab
+      %h2 Statutory Details
+      %div
+        %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+          %tr
+            %td.main_title{:colspan => "2"}
+              PF / ESI / PT Details
           %tr
             %td ESI No.
             %td
@@ -134,7 +201,7 @@
           %tr
             %td ESI Dispensary
             %td
-              %input{:name => "txtESIDispensary", :size => "50", :type => "text"}
+              %input{:name => "txtESIDispensary", :type => "text"}
           %tr
             %td PF No.
             %td
@@ -142,9 +209,10 @@
           %tr
             %td PF No. for Dept. File
             %td
-              %input{:name => "txtPFDeptFile", :size => "50", :type => "text"}
+              %input{:name => "txtPFDeptFile", :type => "text"}
           %tr
-            %td TDS Details
+            %td.main_title{:colspan => "2"}
+              TDS Details
           %tr
             %td PAN
             %td
