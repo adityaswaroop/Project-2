@@ -18,7 +18,7 @@
   #form
     .tabber
       .tabbertab
-        %h2 Company Detail
+        %h2 Company Details
         %div
           %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
             %tr
@@ -135,7 +135,7 @@
                   %tr
                     %td.spacing
       .tabbertab
-        %h2 PF/ESI Detail
+        %h2 PF/ESI Details
         %div
           %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
             %tr
@@ -149,15 +149,18 @@
                   %tr
                     %td.td_width
                       Company PF No.:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtCompPFNo", :size => "30", :type => "text", :value => "KN/4564B"}/
                   %tr
                     %td.td_width
                       DBF File - Code:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtDBF", :size => "30", :type => "text", :value => "56455"}/
                   %tr
                     %td.td_width
                       Extension:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtExtn", :size => "30", :type => "text", :value => "2"}/
                   %tr
                     %td.spacing
                   %tr
@@ -168,11 +171,13 @@
                   %tr
                     %td.td_width
                       Company ESI No.:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtCompESINo", :size => "30", :type => "text", :value => "KN/344/ESI"}/
                   %tr
                     %td.td_width
                       ESI Local Office:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtESIOffice", :size => "30", :type => "text", :value => "123 Street, Mumbai"}/
                   %tr
                     %td.td_width
                       &nbsp;
@@ -187,11 +192,13 @@
                   %tr
                     %td.td_width
                       PF Vol.:
-                    %td= f.check_box :email2
+                    %td
+                      %input{:name => "chkPFVol", :size => "30", :type => "checkbox", :checked => 'checked'}/
                   %tr
                     %td.td_width
                       Multiple Group:
-                    %td= f.check_box :email2
+                    %td
+                      %input{:name => "chkPFMulti", :size => "30", :type => "checkbox"}/
                   %tr
                     %td.td_width
                       &nbsp;
@@ -204,19 +211,22 @@
                   %tr
                     %td.td_width
                       Individually Calculate ESI:
-                    %td= f.check_box :email2
+                    %td
+                      %input{:name => "chkCalESI", :size => "30", :type => "checkbox", :checked => 'checked'}/
                   %tr
                     %td.td_width
                       Limit ESI Gross:
-                    %td= f.check_box :email2
+                    %td
+                      %input{:name => "chkESIGross", :size => "30", :type => "checkbox", :checked => 'checked'}/
                   %tr
                     %td.td_width
                       Multiple Group:
-                    %td= f.check_box :email2
+                    %td
+                      %input{:name => "chkESIMulti", :size => "30", :type => "checkbox"}/
                   %tr
                     %td.spacing
       .tabbertab
-        %h2 Branch Detail
+        %h2 Branch Details
         %div
           %table.disp_data{:align => "center", :cellpadding => "5", :cellspacing => "0"}
             %tr
@@ -230,27 +240,33 @@
                   %tr
                     %td.td_width
                       Branch:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtBranch", :size => "30", :type => "text", :value => "Bangalore WDO"}/
                   %tr
                     %td.td_width
                       Resp. Person:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtResPersonBranch", :size => "30", :type => "text", :value => "MAnjunath"}/
                   %tr
                     %td.td_width
                       Address:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtBranchAdd", :size => "30", :type => "text", :value => "2nd Cross, 10th Main"}/
                   %tr
                     %td.td_width
                       PF Group:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtBranchPF", :size => "30", :type => "text", :value => "Bangalore"}/
                   %tr
                     %td.td_width
                       PT Group:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtBranchPT", :size => "30", :type => "text", :value => "Bangalore"}/
                   %tr
                     %td.td_width
                       ESI Group:
-                    %td= f.text_field :email2
+                    %td
+                      %input{:name => "txtBranchESI", :size => "30", :type => "text", :value => "Bangalore"}/
                   %tr
                     %td.spacing
 
