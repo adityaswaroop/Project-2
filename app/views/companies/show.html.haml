@@ -56,6 +56,70 @@
               %td.td_width
                 Fax:
               %td= @company.fax
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width.main_title{:colspan => "2"}
+                PF Details:
+            %tr
+              %td.td_width
+                Company PF No:
+              %td KN/4564B
+            %tr
+              %td.td_width
+                DBF File - Code:
+              %td 56455
+            %tr
+              %td.td_width
+                Extension:
+              %td 2
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width.main_title{:colspan => "2"}
+                ESI Details:
+            %tr
+              %td.td_width
+                Company ESI No:
+              %td KN/344/ESI
+            %tr
+              %td.td_width
+                ESI Local Address:
+              %td 123 Street, Bangalore
+            %tr
+              %td.td_width
+              %td &nbsp;
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width.main_title{:colspan => "2"}
+                Branch Details:
+            %tr
+              %td.td_width
+                Branch:
+              %td Bangalore WDO
+            %tr
+              %td.td_width
+                Resp. Person:
+              %td Manjunath
+            %tr
+              %td.td_width
+                Address:
+              %td 2nd Cross, 10th Main
+            %tr
+              %td.td_width
+                PF Group:
+              %td Bangalore
+            %tr
+              %td.td_width
+                PT Group:
+              %td Bangalore
+            %tr
+              %td.td_width
+                ESI Group:
+              %td Bangalore
+            %tr
+              %td.spacing
         %td{:width => "50%"}
           %table{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
             %tr
@@ -102,6 +166,53 @@
               %td.td_width
                 Website:
               %td= @company.website
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+                PF Vol.:
+              %td Yes
+            %tr
+              %td.td_width
+                Multiple Group:
+              %td No
+            %tr
+              %td.td_width
+              %td &nbsp;
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+                Individually Calculate ESI:
+              %td Yes
+            %tr
+              %td.td_width
+                Limit ESI Gross:
+              %td Yes
+            %tr
+              %td.td_width
+                Multiple Group:
+              %td No
+            %tr
+              %td.spacing
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
+            %tr
+              %td.td_width
     = link_to 'Edit', edit_company_path(@company)
     |
     \#{link_to 'Back', companies_path}
