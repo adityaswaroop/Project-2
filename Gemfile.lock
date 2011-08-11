@@ -110,6 +110,9 @@ GEM
       sass (>= 3.1.4)
       sprockets (>= 2.0.0.beta.9)
     sexp_processor (3.0.5)
+    simple_form (1.4.2)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.0.0.beta.10)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -142,6 +145,7 @@ DEPENDENCIES
   rspec-rails
   ruby_parser
   sass-rails (~> 3.1.0.rc)
+  simple_form
   sprockets (= 2.0.0.beta.10)
   uglifier
   webrat

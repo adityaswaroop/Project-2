@@ -12,6 +12,8 @@ gem 'mysql2'
 
 gem "haml"
 
+gem "simple_form"
+
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'

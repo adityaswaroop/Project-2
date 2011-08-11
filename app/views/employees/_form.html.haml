@@ -7,6 +7,17 @@
 
   document.write('<style type="text/css">.tabber{display:none;}<\/style>');
 
+
+  function fnShow()
+  {
+      var w = 150;
+      var h = 200;
+      var left = (screen.width/2)-(w/2);
+      var top = (screen.height/2)-(h/2);
+      var targetWin = window.open ('language', 'language', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+  }
+
+
 #form
   .tabber
     .tabbertab
@@ -221,3 +232,147 @@
             %td Ward/Circle
             %td
               %input{:maxlength => "6", :name => "", :type => "textWard"}
+    .tabbertab
+      %h2 HR Details
+      %div
+        %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+          %tr
+            %td{:width => "50%"}
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %td Employee Name
+                  %td
+                    %select{:name => "cmbEmpName"}
+                      %option Rohini
+                      %option Aditya
+                      %option Ranjeet
+                  %tr
+                    %td Employee Id
+                    %td
+                      %select{:name => "cmbEmpId"}
+                        %option 1506
+                        %option 2506
+                        %option 1406
+                  %tr
+                    %td Blood Group
+                    %td
+                      %select{:name => "cmbBloodGrp"}
+                        %option A+
+                        %option A-
+                        %option O+
+                  %tr
+                    %td Cast Category
+                    %td
+                      %select{:name => "cmbCastCategory"}
+                        %option XYZ
+                        %option ABC
+                        %option PQR
+                  %tr
+                    %td Qualification
+                    %td
+                      %select{:name => "cmbQualification"}
+                        %option MCA
+                        %option BCA
+                        %option B Tech.
+                  %tr
+                    %td Nationalty
+                    %td
+                      %input{:name => "txtNationality", :type => "text"}/
+                  %tr
+                    %td Driving Lic No
+                    %td
+                      %input{:name => "txtDrivingLicNo", :type => "text"}/
+                  %tr
+                    %td Language Known
+                    %td
+                      %select{:name => "cmbLanguage"}
+                        %option English
+                        %option Hindi
+                      %input{:name => "btnLanguge", :type => "button", :value => "...", :onclick => "fnShow()"}
+            %td{:width => "50%"}
+              .tabber
+                .tabbertab
+                  %h2 Passport Details
+                  %div
+                    %table.disp_data{:align => "center", :cellpadding => "1", :cellspacing => "1"}
+                      %tr
+                        %td Number
+                        %td
+                          %input{:name => "txtPassportNumber", :type => "text"}
+                      %tr
+                        %td Issued At
+                        %td
+                          %input{:name => "txtIssuedAt", :type => "text"}
+                      %tr
+                        %td Issued Date
+                        %td
+                          %input{:name => "txtIssuedDate", :type => "text"}
+                      %tr
+                        %td Expiry Date
+                        %td
+                          %input{:name => "txtExpiryDate", :type => "text"}
+                .tabbertab
+                  %h2 Image
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 References
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 Emergency Contact
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 Referred By
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+              .tabber
+                .tabbertab
+                  %h2 Access Card
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 Educational Details
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 Evaluation
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
+                .tabbertab
+                  %h2 Sec Dep Details
+                  %div
+                    %br
+                    %br
+                    %br
+                    %br
+                    %br
