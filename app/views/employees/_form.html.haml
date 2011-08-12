@@ -237,6 +237,9 @@
       %div
         %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
           %tr
+            %td.main_title{:colspan => "2"}
+              HR Details
+          %tr
             %td{:width => "50%"}
               %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
                 %tr
@@ -294,7 +297,7 @@
                 .tabbertab
                   %h2 Passport Details
                   %div
-                    %table.disp_data{:align => "center", :cellpadding => "1", :cellspacing => "1"}
+                    %table.disp_data{:align => "center", :cellpadding => "1", :cellspacing => "1", :height => "80%"}
                       %tr
                         %td Number
                         %td
@@ -314,65 +317,199 @@
                 .tabbertab
                   %h2 Image
                   %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
+                    %table.disp_data{:align => "center", :cellpadding => "1", :cellspacing => "1", :height => "80%"}
+                      %tr
+                        %td
+                          %form{:action => "", :enctype => "multipart/form-data", :method => "get"}
+                            %input{:name => "", :type => "text"}/
+                            %input{:name => "ImageFile", :type => "file"}/
+                            %br/
+                            %textarea{:cols => "30", :name => "txtarImage", :rows => "10"}
                 .tabbertab
                   %h2 References
                   %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-                .tabbertab
-                  %h2 Emergency Contact
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-                .tabbertab
-                  %h2 Referred By
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-              .tabber
-                .tabbertab
-                  %h2 Access Card
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-                .tabbertab
-                  %h2 Educational Details
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-                .tabbertab
-                  %h2 Evaluation
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
-                .tabbertab
-                  %h2 Sec Dep Details
-                  %div
-                    %br
-                    %br
-                    %br
-                    %br
-                    %br
+                    %textarea{:cols => "40", :name => "txtarImage", :rows => "10"}
+    .tabbertab
+      %h2 Other HR Details
+      %div
+        .tabber
+          .tabbertab
+            %h2 Emergency Contact
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Name of Relative
+                  %th Relation
+                  %th Phone
+                  %th Remarks
+                  %th Email
+                  %th Nominee
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+          .tabbertab
+            %h2 Referred By
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Referred By
+                  %th Emp Status
+                  %th Date
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+          .tabbertab
+            %h2 Access Card
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Details
+                  %th Card Number
+                  %th Date Issued
+                  %th Payslip Option
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text"}
+          .tabbertab
+            %h2 Educational Details
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Qualification
+                  %th University
+                  %th Remarks
+                  %th Percentage
+                  %th Year Passed
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+          .tabbertab
+            %h2 Evalution
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Number
+                  %th Revenue
+                  %th Attendance
+                  %th Result
+                  %th From Date
+                  %th To Date
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+          .tabbertab
+            %h2 Sec Dep Details
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Number
+                  %th Sec Dept
+                  %th Sec Dept RF
+                  %th 3
+                  %th 4
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+          .tabbertab
+            %h2 Notification Sent
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Reason
+                  %th Details
+                  %th Mode
+                  %th Remarks
+                  %th Date
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+          .tabbertab
+            %h2 Commission Details
+            %div
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th Project
+                  %th Company
+                  %th Deals
+                  %th Date
+                  %th Paid On
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+              %table.disp_data{:align => "center", :cellpadding => "2", :cellspacing => "2"}
+                %tr
+                  %th 1
+                  %th 2
+                  %th 3
+                  %th 4
+                %tr
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
+                  %td
+                    %input{:name => "txtDOL", :type => "text", :size => "15"}
