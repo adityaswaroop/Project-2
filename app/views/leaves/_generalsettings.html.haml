@@ -1,0 +1,54 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+  %body
+    %div{:style => "border-style: solid; width: 400px"}
+      %table{:style => "width:100%;"}
+        %tr
+          %td{:align => "center", :colspan => "2", :style => "font-family: Verdana; font-size: large; font-weight: bold;"}
+            General Settings
+            %hr/
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small; font-weight: bold; width:60%"}
+            Basic Settings
+          %td{:style => "font-family: Verdana; font-size: small"}
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            Consider Exess Leave as LOP
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#cbExcessLeave{:type => "checkbox"}/
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            Priority to be given for:
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %select{:name => "cmbHoliday", :style => "width:100%;"}
+              %option Weekly Holiday
+              %option General Holiday
+        %tr
+          %td{:colspan => "2", :style => "font-family: Verdana; font-size: small; font-weight: bold;"}
+            %hr/
+            Advanced Settings
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            Rotating Weekly Holiday
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#cbRotWeekly{:type => "checkbox"}/
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            Auto Allotment of Leave
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#cbAutoAllot{:type => "checkbox"}/
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            Consider CO and CW for Days calculation
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#cbCoCw{:type => "checkbox"}/
+        %tr
+          %td.style1{:colspan => "2", :style => "font-family: Verdana; font-size: small"}
+            %hr/
+        %tr
+          %td.style1{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            %input#btnSave{:type => "button", :value => "Save"}/
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#btnCancel{:type => "button", :value => "Cancel"}/

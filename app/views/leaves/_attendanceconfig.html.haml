@@ -1,0 +1,82 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+  %body
+    %div{:style => "border-style: solid; width: 800px"}
+      %table{:style => "width:100%;"}
+        %tr
+          %td{:align => "center", :colspan => "5", :style => "font-family: Verdana; font-size: large; font-weight: bold;"}
+            Attendance Configuration
+            %hr/
+        %tr
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Attendance:
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#txtAttendance{:style => "width:100%", :type => "text"}/
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Short Form:
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#txtShortform{:style => "width:95%", :type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Is it Linked to salary calculation?
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#cbSalcalcYN{:type => "checkbox"}/
+          %td{:style => "font-family: Verdana; font-size: small"}
+          %td{:style => "font-family: Verdana; font-size: small"}
+          %td{:style => "font-family: Verdana; font-size: small"}
+        %tr
+          %td{:align => "right", :rowspan => "2", :style => "font-family: Verdana; font-size: small", :valign => "top"}
+            Salary Calculation Days:
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbActdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Actual
+            Days
+          %td{:style => "font-family: Verdana; font-size: small"}
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbWdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Working
+            Days
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbWWdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Working
+            Days + Weekly Holidays
+        %tr
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbWHdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Working
+            Days + Holidays
+          %td{:style => "font-family: Verdana; font-size: small"}
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbFdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Fixed
+            Days
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbCdays{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Custom
+        %tr
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Attendance Type:
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbdaily{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            Daily
+          %td{:style => "font-family: Verdana; font-size: small"}
+          %td{:style => "font-family: Verdana; font-size: small"}
+            %input#rbHourly{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            Hourly
+          %td{:style => "font-family: Verdana; font-size: small"}
+        %tr
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Remarks:
+          %td{:colspan => "4", :style => "font-family: Verdana; font-size: small"}
+            %input#txtRemarks{:style => "width:90%", :type => "text"}/
+        %tr
+          %td{:align => "right", :colspan => "5", :style => "font-family: Verdana; font-size: small"}
+            %hr/
+        %tr
+          %td{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            %input#btnSave{:type => "button", :value => "Save"}/
+          %td{:colspan => "4", :style => "font-family: Verdana; font-size: small"}
+            %input#btnCancel{:type => "button", :value => "Cancel"}/

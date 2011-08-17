@@ -12,17 +12,24 @@
     %li
       %a{:href => employees_path} EMPLOYEE
     %li
-      %a.selected{:href => timemanagements_path} TA
+      %a{:href => timemanagements_path} TA
     %li
       %a{:href => salaries_path} SALARY
     %li
-      %a{:href => leaves_path} LEAVE
+      %a.selected{:href => employees_path} LEAVE
 .below_border &nbsp;
 #left-content
   .left_box
     .left_box_header
-      %h1 Company's Quick Links
+      %h1 Leave Module Links
     %p
-      %a{:href => "#"} Groups
+      %a{:href => leaves_path} Leave
       %br/
-      %a{:href => companies_path} Company List
+      %a{:href => "#"} Add New Leave
+      %br/
+      %a{:href => "#"} Configure Attendance
+      %br/
+      %a{:href => "#"} General Settings
+      %br/
+      %a{:href => "#"} Holiday List
+      %br/
