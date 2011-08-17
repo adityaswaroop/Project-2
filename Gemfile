@@ -2,13 +2,15 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc4'
 
+gem 'arel' , '2.1.1'
+
 gem 'sprockets', '2.0.0.beta.10'
 
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql2', '> 0.3'
 
 gem "haml"
 
