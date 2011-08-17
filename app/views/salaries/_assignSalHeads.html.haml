@@ -1,0 +1,142 @@
+!!!
+%html
+  %head
+    %title Assign Heads to salary Structure
+  %body
+    %form
+      %b Assigning Salary Heads
+      %table{:border => "1"}
+        %tr
+          %td
+            Salary Structure
+          %td{:colspan => "2"}
+            %select{:name => "salStruct"}
+              %option{:value => "salStruct1"} Sal Structure1
+              %option{:value => "salStruct2"} Sal Structure2
+              %option{:value => "salStruct3"} Sal Structure3
+          %td
+            %input{:name => "btnSalStruct", :type => "button", :value => "..."}/
+          %td{:rowspan => "8"}
+            %table{:border => "1"}
+              %tr
+                %td
+                  %input{:name => "pf", :type => "checkbox"}/
+                  PF
+                %td
+                  %input{:name => "pfPercent", :size => "10", :type => "text"}>/
+                  \%
+              %tr
+                %td
+                  %input{:name => "esi", :type => "checkbox"}/
+                  ESI
+                %td
+                  %input{:name => "esiPercent", :size => "10", :type => "text"}>/
+                  \%
+              %tr
+                %td
+                  %input{:name => "pt", :type => "checkbox"}/
+                  PT
+                %td
+                  %input{:name => "volPf", :type => "checkbox"}/
+                  PF Vol.
+              %tr
+                %td
+                  %input{:name => "roundOff", :type => "checkbox"}/
+                  Round Off
+                %td
+                  %select{:name => "roundOff"}
+                    %option{:value => "nearRupee"} Nearest Rupee
+                    %option{:value => "highestRupee"} Higher Rupee
+              %tr
+                %td
+                  TDS Reference
+                %td
+                  %select{:name => "tdsRef"}
+                    %option{:value => "none"} None
+                    %option{:value => "basic"} Basic
+                    %option{:value => "da"} DA
+                    %option{:value => "hra"} HRA
+                    %option{:value => "conv"} Conveyance
+                    %option{:value => "othAllow"} Oth. Allowances
+              %tr
+                %td{:colspan => "2"}
+                  %input{:name => "prevMon", :type => "checkbox"}/
+                  Carry forward data from previous month
+              %tr
+                %td{:colspan => "2"}
+                  %input{:name => "extraPolate", :type => "checkbox"}/
+                  Extrapolate the amount for TDS purpose
+        %tr
+          %td
+            Salary Head
+          %td{:colspan => "2"}
+            %select{:name => "salHead"}
+              %option{:value => "salHead1"} Basic
+              %option{:value => "salHead2"} Dearness Allowance
+              %option{:value => "salHead3"} House Rent Allowance
+              %option{:value => "salHead4"} Conveyance
+          %td
+            %input{:name => "btnSalHeads", :type => "button", :value => "..."}/
+        %tr
+          %td
+            Print Name
+          %td{:colspan => "3"}
+            %input{:name => "printName", :size => "31", :type => "text"}/
+        %tr
+          %td
+            Valid From
+          %td
+            %select{:name => "from"}
+              %option{:value => "month1"} June/2011
+              %option{:value => "month2"} July/2011
+              %option{:value => "month3"} Aug/2011
+              %option{:value => "month4"} Sep/2011
+          %td
+            Valid To
+          %td
+            %select{:name => "to"}
+              %option{:value => "month1"} June/2011
+              %option{:value => "month2"} July/2011
+              %option{:value => "month3"} Aug/2011
+              %option{:value => "month4"} Sep/2011
+        %tr
+          %td
+            Calc Basis
+          %td{:colspan => "2"}
+            %select{:name => "calcBasis"}
+              %option{:value => "payDays"} Pay Days
+              %option{:value => "presentDays"} Present Days
+              %option{:value => "independent"} Independent
+              %option{:value => "payDaysDaily"} Pay Days - Daily Basis
+              %option{:value => "presentDaysDaily"} Present Days - Daily Basis
+              %option{:value => "special"} Special
+          %td
+            %input{:name => "btnCalcBasis", :type => "button", :value => "S"}/
+        %tr
+          %td
+            Calc Type
+          %td{:colspan => "3"}
+            %select{:name => "calcType"}
+              %option{:value => "formula"} Formula
+              %option{:value => "slab"} Slab
+              %option{:value => "lumpSum"} Lump Sum
+              %option{:value => "cmpLumpSum"} Company Lump Sum
+              %option{:value => "salLumpSum"} Sal Structure Lump Sum
+              %option{:value => "everyMonth"} Every Month
+              %option{:value => "notApplicable"} Not Applicable
+        %tr
+          %td
+            Option
+          %td{:colspan => "2"}
+            %select{:name => "option"}
+          %td
+            %input{:name => "btnOption", :type => "button", :value => "..."}/
+        %tr
+          %td
+            Remarks
+          %td{:colspan => "3"}
+            %input{:name => "remarks", :size => "31", :type => "text"}/
+      %br/
+      %div
+        %input{:name => "save", :type => "button", :value => "Save"}/
+        %input{:name => "cancel", :type => "button", :value => "Cancel"}/

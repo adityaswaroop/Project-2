@@ -1,0 +1,115 @@
+!!!
+%html
+  %head
+    %title Salary Rate
+  %body
+    %form
+      %b Employee - Salary Rate Details
+      %table{:border => "1"}
+        %tr
+          %td
+            Emp ID
+          %td
+            %select{:name => "empID"}
+              %option 10011
+              %option 10012
+              %option 10013
+              %option 10014
+              %option 10015
+          %td
+            Employee Name
+          %td
+            %select{:name => "empName"}
+              %option Guruprasad R K
+              %option Mukunda H L
+              %option Ganesh L
+              %option Ranjeet
+              %option Aditya
+        %tr
+          %td
+            Month/Year
+          %td
+            %select{:name => "monYear"}
+              %option Aug/2011
+              %option Jul/2011
+              %option Jun/2011
+          %td
+            Sal Structure
+          %td
+            %select{:name => "salStruct"}
+              %option Sal Structure-Development
+              %option Sal Structure-Marketing
+              %option Sal Structure-WDO
+      %br/
+      %table{:border => "1"}
+        %tr
+          %td{:colspan => "2"}
+            %center
+              %small
+                %b Earning Heads
+          %td{:colspan => "2"}
+            %center
+              %small
+                %b Deduction Heads
+        %tr
+          %td
+            EHead1
+          %td
+            %input{:name => "eHead1", :type => "text"}/
+          %td
+            DHead1
+          %td
+            %input{:name => "dHead1", :type => "text"}/
+        %tr
+          %td
+            EHead2
+          %td
+            %input{:name => "eHead2", :type => "text"}/
+          %td
+            DHead2
+          %td
+            %input{:name => "dHead2", :type => "text"}/
+        %tr
+          %td
+            EHead3
+          %td
+            %input{:name => "eHead3", :type => "text"}/
+          %td
+            DHead3
+          %td
+            %input{:name => "dHead3", :type => "text"}/
+        %tr
+          %td
+            EHead4
+          %td
+            %input{:name => "eHead4", :type => "text"}/
+          %td
+            DHead4
+          %td
+            %input{:name => "dHead4", :type => "text"}/
+        %tr
+          %td
+            EHead5
+          %td
+            %input{:name => "eHead5", :type => "text"}/
+          %td
+            DHead5
+          %td
+            %input{:name => "dHead5", :type => "text"}/
+        %tr
+          %td
+            %center
+              %small
+                %b Ear. Total
+          %td
+            %input{:name => "eTotal", :type => "text"}/
+          %td
+            %center
+              %small
+                %b Ded. Total
+          %td
+            %input{:name => "dTotal", :type => "text"}/
+        %tr
+          %td Remarks
+          %td{:colspan => "3"}
+            %input{:name => "remarks", :size => "53", :type => "text"}/

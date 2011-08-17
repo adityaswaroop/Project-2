@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title Salary Head Definition
+  %body
+    %form
+      %b Salary Heads
+      %div
+        %input{:name => "heads", :type => "radio", :value => "earnings"}/
+        Earnings
+        %input{:name => "heads", :type => "radio", :value => "deductions"}/
+        Deductions
+      %table{:border => "1"}
+        %tr
+          %td
+            Head
+          %td
+            %input{:name => "head", :type => "text"}/
+          %td
+            Print Name
+          %td
+            %input{:name => "printName", :type => "text"}/
+        %tr
+          %td{:colspan => "2"}
+            %input{:name => "openComp", :type => "checkbox"}/
+            Open Component
+          %td{:colspan => "2"}
+            %input{:name => "calcField", :type => "checkbox"}/
+            Calculation Field
+        %tr
+          %td{:colspan => "4"}
+            %input{:name => "save", :type => "button", :value => "Save"}/
+            %input{:name => "cancel", :type => "button", :value => "Cancel"}/
+
+      %br/
+      %div
+
+
