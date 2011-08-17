@@ -1,0 +1,50 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+    :css
+      .style1
+      {
+          width: 60%;
+      }
+      .style2
+      {
+      	width: 40%;
+      }
+
+      %body
+    %div{:style => "border-style: solid; width: 400px"}
+      %table{:style => "width: 100%; height: 181px; font-family: Verdana; font-size: small;"}
+        %tr
+          %td{:align => "center", :colspan => "2", :style => "font-family: Verdana; font-size: medium; font-weight: bold;"}
+            Add a new Leave
+            %hr/
+        %tr
+          %td.style2{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Leave Name:
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#txtLeaveName{:type => "text"}/
+        %tr
+          %td.style2{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Short Form:
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#txtShortForm{:type => "text"}/
+        %tr
+          %td.style2{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Does it affect Salary?
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#RBYes{:checked => "checked", :name => "R1", :type => "radio", :value => "Yes"}/
+            Yes
+            = succeed "No" do
+              %input#RBNo{:name => "R1", :type => "radio", :value => "No"}/
+        %tr
+          %td.style2{:align => "right", :style => "font-family: Verdana; font-size: small"}
+            Allotment start date:
+          %td.style1{:style => "font-family: Verdana; font-size: small"}
+            %input#txtAllStartdate{:type => "text"}/
+        %tr
+          %td.style2{:align => "right", :colspan => "2", :style => "font-family: Verdana; font-size: small"}
+            %hr/
+        %tr
+          %td.style3{:style => "font-family: Verdana; font-size: small"}
+          %td.style3{:align => "left", :style => "font-family: Verdana; font-size: small"}
+            %input#btnSave{:type => "button", :value => "Save"}/

@@ -1,0 +1,130 @@
+!!!
+%html
+  %head
+    %title PF/ESI Rate Editor
+  %body
+    %form
+      %div
+        %b PF/ESI Rate Editor
+      %br/
+      %table
+        %tr
+          %td
+            Month/Year
+          %td
+            %select{:name => "monYear"}
+              %option Aug/2011
+              %option Jul/2011
+              %option Jun/2011
+      %br/
+      %table{:border => "1"}
+        %tr
+          %td{:colspan => "4"}
+            %center
+              %small
+                %b Provident Fund
+          %td{:colspan => "2"}
+            %center
+              %small
+                %b Employee State Insurance
+        %tr
+          %td
+            EPF(A) - (%)
+          %td
+            %input{:name => "epfA", :size => "10", :type => "text"}/
+          %td
+            Cut-Off
+          %td
+            %input{:name => "cutOff", :size => "10", :type => "text"}/
+          %td{:rowspan => "7"}
+            %table{:border => "1"}
+              %tr
+                %td
+                  Employee(%)
+                %td
+                  %input{:name => "esiEmp", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  Employer(%)
+                %td
+                  %input{:name => "esiEmpr", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  Cut-Off
+                %td
+                  %input{:name => "esiCutOff", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  Min.Limit
+                %td
+                  %input{:name => "esiMinLimit", :size => "10", :type => "text"}/
+              %tr
+                %td{:colspan => "2"}
+                  %small
+                    %b Round Off
+                  %br/
+                  %center
+                    %input{:name => "esiRoundOff", :type => "radio", :value => "esiHigh5"}/
+                    Higher Five Paise
+                  %center
+                    %input{:name => "esiRoundOff", :type => "radio", :value => "esiHighRupee"}/
+                    Higher Rupee
+                  %center
+                    %input{:name => "esiRoundOff", :type => "radio", :value => "esiNearRupee"}/
+                    Nearest Rupee
+        %tr
+          %td{:colspan => "2"}
+            %table{:border => "1"}
+              %tr
+                %td{:colspan => "2"}
+                  %center
+                    %small
+                      %b Employer's Share(%)
+              %tr
+                %td
+                  Pension Fund(B)
+                %td
+                  %input{:name => "penFundB", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  EPF(A-B)
+                %td
+                  %input{:name => "epfAB", :size => "10", :type => "text"}/
+          %td{:colspan => "2"}
+            %table{:border => "1"}
+              %tr
+                %td
+                  Acc No. 02(%)
+                %td
+                  %input{:name => "acc02", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  Acc No. 21(%)
+                %td
+                  %input{:name => "acc21", :size => "10", :type => "text"}/
+              %tr
+                %td
+                  Acc No.22(%)
+                %td
+                  %input{:name => "acc22", :size => "10", :type => "text"}/
+        %tr
+          %td
+            %small
+              %b Round Off
+            %br/
+            %center
+              %input{:name => "roundOff", :type => "radio", :value => "nearRupee"}/
+              Nearest Rupee
+            %center
+              %input{:name => "roundOff", :type => "radio", :value => "highRupee"}/
+              Higher Rupee
+          %td{:colspan => "3"}
+            %input{:name => "emprShare", :type => "checkbox"}/
+            Restrict Employer Share
+            %center
+              %input{:name => "empShare", :type => "checkbox"}/
+              Restrict Employee Share to Employer Share
+      %br/
+      %div
+        %input{:name => "save", :type => "button", :value => "Save"}/
+        %input{:name => "cancel", :type => "button", :value => "Cancel"}/

@@ -1,0 +1,152 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+  %body
+    %div{:style => "border-style: solid; width: 750px"}
+      %table{:style => "width:100%;"}
+        %tr
+          %td{:align => "center", :colspan => "6", :style => "font-family: verdana; font-size: large; font-weight: bold;"}
+            Leave Allotment Settings
+            %hr/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Leave Name
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %select{:name => "cmbLeaveName", :style => "width:100%;"}
+              %option Casual Leave
+              %option Sick Leave
+              %option Earned Leave
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:style => "font-family: verdana; font-size: small;"}
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Allot Leave:
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %input#rbjoining{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            From
+            Joining
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:colspan => "2", :style => "font-family: verdana; font-size: small;"}
+            %input#rbAfterProb{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            After
+            Probation
+            %input#rbAfterConf{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            After
+            Confirmation
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#rbCustom{:checked => "checked", :name => "R1", :type => "radio", :value => "V1"}>/
+            Custom
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            Months:
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#txtMonths{:type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td
+          %td
+          %td.style1{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            Days:
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#txtDays{:type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Auto Allot frequency:
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %select{:name => "cmblvFrequency", :style => "width:100%;"}
+              %option Monthly
+              %option Yearly
+              %option Half Yearly
+          %td{:style => "font-family: verdana; font-size: small;"}
+            \&nbsp;
+          %td{:style => "font-family: verdana; font-size: small;"}
+            \&nbsp;
+          %td{:colspan => "2", :style => "font-family: verdana; font-size: small;"}
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Eligible for Leave Encashment?
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %input#cbEligibility{:type => "checkbox"}/
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td{:style => "font-family: verdana; font-size: small;"}
+            Min Bal for
+            %br/
+            Encashment:
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %input#txtMinBal{:type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Round off:
+          %td{:style => "font-family: verdana; font-size: small;"}
+            %select{:name => "cmbRoundOff", :style => "width:100%;"}
+              %option Nearest Half
+              %option Nearest Full
+              %option None
+          %td{:style => "font-family: verdana; font-size: small;"}
+          %td
+          %td
+      %table{:style => "width:100%;"}
+        %tr
+          %td{:align => "center", :colspan => "5", :style => "font-family: verdana; font-size: large; font-weight: bold;"}
+            %hr/
+            Leave Avail Settings
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+            Allot Leave:
+          %td.style2{:style => "font-family: verdana; font-size: small;"}
+            %input#bdJoiningAv{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            From
+            Joining
+          %td{:colspan => "3", :style => "font-family: verdana; font-size: small;"}
+            %input#rbAfterProbAv{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            After
+            Probation
+            %input#rbAfterConfAv{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            After
+            Confirmation
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#rbCustomAv{:checked => "checked", :name => "R2", :type => "radio", :value => "V1"}>/
+            Custom
+          %td{:align => "left", :colspan => "2", :style => "font-family: verdana; font-size: small;"}
+            Months:
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#txtMonthsAv{:type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "right", :style => "font-family: verdana; font-size: small;"}
+          %td{:align => "left", :colspan => "2", :style => "font-family: verdana; font-size: small;"}
+            Days:
+          %td{:align => "left", :style => "font-family: verdana; font-size: small;"}
+            %input#txtDaysAv{:type => "text"}/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small"}
+            Allow Carry over?
+          %td{:style => "font-family: verdana; font-size: small"}
+            \&nbsp;
+            %input#cbAllowCOver{:type => "checkbox"}/
+          %td{:colspan => "3", :style => "font-family: verdana; font-size: small"}
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small"}
+            Remarks:
+          %td{:colspan => "4", :style => "font-family: verdana; font-size: small"}
+            %input#txtRemarks{:style => "width:90%", :type => "text"}/
+        %tr
+          %td{:align => "right", :colspan => "5", :style => "font-family: verdana; font-size: small"}
+            %hr/
+        %tr
+          %td{:align => "right", :style => "font-family: verdana; font-size: small"}
+            \&nbsp;
+          %td{:align => "right", :colspan => "2", :style => "font-family: verdana; font-size: small"}
+            %input#btnSave{:type => "submit", :value => "submit"}/
+          %td{:colspan => "2", :style => "font-family: verdana; font-size: small"}
+            %input#btnCancel{:type => "submit", :value => "Cancel"}/
