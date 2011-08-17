@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Salary Structure Master
+  %body
+    %form
+      %b Salary Structure Definition
+      %table{:border => "1"}
+        %tr
+          %td
+            Salary Structure
+          %td
+            %input{:name => "salStruct", :type => "text"}/
+          %td
+            %input{:name => "onGross", :type => "checkbox"}/
+            Salary Rate is Defined on Gross
+        %tr
+          %td
+            Remarks
+          %td{:colspan => "2"}
+            %input{:name => "remarks", :size => "52", :type => "text"}/
+      %br/
+      %div
+        %input{:name => "save", :type => "button", :value => "Save"}/
+        %input{:name => "cancel", :type => "button", :value => "Cancel"}/
