@@ -1,0 +1,91 @@
+%script{:src => "companies.js", :type => "text/javascript"}
+%link{:href => "companies.css.scss", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+:javascript
+ document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+#form
+ %h2 Shift Details
+ %table{:border => "0", :width => "1000"}
+  %tr
+   %td
+    %label Shift Name
+   %td
+    %input{:name => "txtshiftname", :type => "text"}/
+   %td
+    %label Lunch Mins. Applicable
+    %td
+     %input{:name => "chkLunchMins", :type => "checkbox", :value => ""}/
+    %td
+     %label Lunch Mins.
+    %td
+     %input{:name => "txtLunchMins", :type => "text"}/
+  %tr
+   %td
+    %label Shift Alias Name
+   %td
+    %input{:name => "txtshiftAliasname", :type => "text"}/
+   %td
+    %label Max. Early Inpunch
+   %td
+    %input{:name => "txtECMins", :type => "text", :value => ""}/
+   %td
+    %label Max. Late Outpunch
+   %td
+    %input{:name => "txtLGMins", :type => "text", :value => ""}/
+  %tr
+   %td
+    %label Flexi Shift
+   %td
+    %input{:name => "flexiShift", :type => "checkbox", :value => ""}/
+   %td
+    %label OT applicable
+   %td
+    %input{:name => "chkOTappl", :type => "checkbox", :value => ""}/
+   %td
+    %label Pre OT
+    %input{:name => "chkPreOT", :type => "checkbox", :value => ""}/
+   %td
+    %label Post OT
+    %input{:name => "chkPostOT", :type => "checkbox", :value => ""}/
+  %tr
+   %td
+    %label In Time
+   %td
+    %input{:name => "intime", :type => "text", :value => ""}/
+   %td
+    %label OT Round off
+   %td
+    %input{:name => "otrounfoff", :type => "checkbox", :value => ""}/
+   %td
+    %label Lower Mins
+    %input{:name => "chkOTLowrMins", :type => "checkbox", :value => ""}/
+   %td
+    %label Higher Mins
+    %input{:name => "chkOThigherMins", :type => "checkbox", :value => ""}/
+  %tr
+   %td
+    %label Out Time
+   %td
+    %input{:name => "outtime", :type => "text", :value => ""}/
+   %td
+    %label Max. OT Mins.
+   %td
+    %input{:name => "maxotmins", :type => "text", :value => ""}/
+   %td
+    %label OT Start Mins.
+   %td
+    %input{:name => "otstartmins", :type => "text", :value => ""}/
+  %tr
+   %td
+    %label Full Day Mins.
+   %td
+    %input{:name => "otstartmins", :type => "text", :value => ""}/
+   %td
+    %label Half Day Mins.
+   %td
+    %input{:name => "otstartmins", :type => "text", :value => ""}/
+   %td
+    %label Full Day Mins. + OT Start Mins.
+   %td
+    %input{:name => "otstartmins", :type => "text", :value => ""}/
+%input{:name => "save", :type => "button", :value => "Save"}/
